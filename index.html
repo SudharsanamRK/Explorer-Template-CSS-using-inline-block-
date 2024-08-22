@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander - Certified Travel Destinations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Wander</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Your Next Adventure Awaits</h2>
+            <p>Discover the most amazing places around the globe.</p>
+
+            <div class="search-options">
+                <div class="date-picker">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date">
+                    
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date">
+                </div>
+                
+                <div class="accommodation-type">
+                    <label for="accommodation">Accommodation Type:</label>
+                    <select id="accommodation" name="accommodation">
+                        <option disabled selected>Choose Accommodation Type</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="hostel">Hostel</option>
+                        <option value="resort">Resort</option>
+                        <option value="airbnb">Airbnb</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="search-button">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-item">
+                    <img src="assets/bali.jpg" alt="Bali, Indonesia">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Experience the tropical paradise of Bali.</p>
+                </div>
+                <div class="destination-item">
+                    <img src="assets/kyoto.jpg" alt="Kyoto, Japan">
+                    <h3>Kyoto, Japan</h3>
+                    <p>Explore the ancient temples and gardens of Kyoto.</p>
+                </div>
+                <div class="destination-item">
+                    <img src="assets/paris.jpg" alt="Paris, France">
+                    <h3>Paris, France</h3>
+                    <p>Fall in love with the City of Lights.</p>
+                </div>
+                <div class="destination-item">
+                    <img src="assets/maui.jpg" alt="Maui, Hawaii">
+                    <h3>Maui, Hawaii</h3>
+                    <p>Relax on the stunning beaches of Maui.</p>
+                </div>
+
+                <div class="destination-item">
+                    <img src="assets/rome.jpg" alt="Rome, Italy">
+                    <h3>Rome, Italy</h3>
+                    <p>Discover the ancient history and culture of Rome.</p>
+                </div>
+                <div class="destination-item">
+                    <img src="assets/sydney.jpg" alt="Sydney, Australia">
+                    <h3>Sydney, Australia</h3>
+                    <p>Explore the iconic landmarks of Sydney.</p>
+                </div>
+                <div class="destination-item">
+                    <img src="assets/capetown.jpg" alt="Cape Town, South Africa">
+                    <h3>Cape Town, South Africa</h3>
+                    <p>Experience the natural beauty of Cape Town.</p>
+                </div>
+                <div class="destination-item">
+                    <img src="assets/cancun.jpg" alt="Cancun, Mexico">
+                    <h3>Cancun, Mexico</h3>
+                    <p>Enjoy the vibrant beaches and nightlife of Cancun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                We are passionate travelers who love exploring the most beautiful destinations around the globe. Our mission is to inspire others to discover new places and create unforgettable memories.
+            </p>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us using the form below. We’d love to hear from you!</p>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+      
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wander - Travel Destinations. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
